@@ -8,6 +8,7 @@ import (
 func main() {
 	defineBasicArray()
 	getAssignmentExampleArray()
+	initializeUsingIndex()
 	declareAndSetArray()
 	fix()
 	wizardPrinter()
@@ -197,4 +198,16 @@ func wizardPrinter() {
 		}
 	}
 
+}
+
+func initializeUsingIndex() {
+	fmt.Println("************** Initialize Using Index ****************")
+	var a1 [5]int = [5]int{0: 1, 1: 3, 4: 5} // Initializing using index
+	fmt.Println(a1)
+
+	var a2 [10]int = [10]int{5: 1, 2} // Initializing using index
+	fmt.Println(a2)
+
+	var a3 [10]int = [10]int{5: 2} // Initializing using index
+	fmt.Println(a3)
 }
